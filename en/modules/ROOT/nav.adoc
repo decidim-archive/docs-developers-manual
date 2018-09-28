@@ -19,6 +19,27 @@
 ** xref:customization/styles.adoc[Styles]
 ** xref:customization/texts.adoc[Texts]
 ** xref:customization/views.adoc[Views]
+* Services
+** xref:services/activejob.adoc[ActiveJob]
+** xref:services/analytics.adoc[Analytics]
+** xref:services/geocoding.adoc[Geocoding]
+** xref:services/social_providers.adoc[Social Providers]
+* Advanced
+** xref:advanced/activity_log.adoc[Activity Log]
+** xref:advanced/add_authorizable_action.adoc[Add authorizable action]
+** xref:advanced/adding_fixtures_aka_dummy_content.adoc[Adding fixtures]
+** xref:advanced/components.adoc[Components]
+** xref:advanced/content_blocks.adoc[Content Blocks]
+** xref:advanced/content_processors.adoc[Content Processors]
+** xref:advanced/data-picker.adoc[Data Picker]
+** xref:advanced/deploy.adoc[Deploy]
+** xref:advanced/followers.adoc[Followers]
+** xref:advanced/how_to_create_a_module.adoc[How to create a module]
+** xref:advanced/managing_translations_i18n.adoc[Managing translations]
+** xref:advanced/testing.adoc[Testing]
+** xref:advanced/tradeoffs.adoc[Tradeoffs]
+** xref:advanced/view_hooks.adoc[View hooks]
+** xref:advanced/view_models_aka_cells.adoc[View models aka cells]
 
 .Other formats
 * xref:single-page.adoc[Single page (HTML)]
