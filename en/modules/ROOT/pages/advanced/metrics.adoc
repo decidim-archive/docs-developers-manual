@@ -1,0 +1,37 @@
+[[metrics]]
+Metrics
+-------
+
+Metrics calculations must be executed everyday. Some `rake task` have
+been added to perform it.
+
+* To execute all metrics at once. Related to previous date from _today_
+
+`ruby   bundle exec rake decidim:metrics:all`
+
+* To execute an specific metric. Related to previous date from _today_
+
+`ruby   bundle exec rake decidim:metrics:one["<metric name>"]`
+
+* To execute metrics for a given date (all or an specific one)
+
+`ruby   bundle exec rake decidim:metrics:all["YYYY-MM-DD"]   bundle exec rake decidim:metrics:one["<metric name>","YYYY-MM-DD"]`
+
+[[current-available-metric-names]]
+Current available metric names
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* _users_, confirmed Users
+* _proposals_, available Proposals
+* _accepted_proposals_, currently accepted Proposals
+* _votes_, votes in Proposals
+
+[[to-configure-it-correctly]]
+To configure it correctly
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* A *crontab* line must be added to your server to maintain them updated
+daily. You could use https://github.com/javan/whenever[Whenever] to
+manage it directly from the APP
+* A *ActiveJob* queue, like https://github.com/mperham/sidekiq[Sidekiq]
+or https://github.com/collectiveidea/delayed_job/[DelayedJob]

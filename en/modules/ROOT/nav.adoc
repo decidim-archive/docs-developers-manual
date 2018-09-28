@@ -4,13 +4,21 @@
 * xref:doc-info.adoc[Document information]
 * xref:contributing.adoc[Authorship criteria and how to contribute to this document]
 
-
 .Contents
 * xref:introduction.adoc[Introduction]
-* Second section
-** Subsection A
-** Subsection B
-* Third section
+* xref:getting_started.adoc[Getting Started]
+* xref:development_guide.adoc[Development Guide]
+* xref:checklist.adoc[Checklist]
+* Customization
+** xref:customization/code.adoc[Code]
+** xref:customization/authorizations.adoc[Authorizations]
+** xref:customization/gemfile.adoc[Gemfile]
+** xref:customization/images.adoc[Images]
+** xref:customization/javascript.adoc[Javascript]
+** xref:customization/oauth.adoc[OAUTH]
+** xref:customization/styles.adoc[Styles]
+** xref:customization/texts.adoc[Texts]
+** xref:customization/views.adoc[Views]
 
 .Other formats
 * xref:single-page.adoc[Single page (HTML)]

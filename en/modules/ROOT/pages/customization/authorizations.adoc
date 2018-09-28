@@ -1,0 +1,7 @@
+[[authorizations]]
+Authorizations
+--------------
+
+See
+https://github.com/decidim/decidim/blob/master/decidim-verifications/README.md[decidim-verifications's
+README].
