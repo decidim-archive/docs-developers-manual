@@ -1,0 +1,44 @@
+[[decidimsurveys]]
+Decidim::Surveys
+----------------
+
+The Surveys module adds one of the main components of Decidim: allows
+admins to contribute to a participatory process by creating surveys.
+Users can participate in the surveys answering their questions from the
+public page.
+
+[[usage]]
+Usage
+~~~~~
+
+Surveys will be available as a Component for a Participatory Process.
+
+[[installation]]
+Installation
+~~~~~~~~~~~~
+
+Add this line to your application's Gemfile:
+
+[source,ruby]
+----
+gem 'decidim-surveys'
+----
+
+And then execute:
+
+[source,bash]
+----
+bundle
+----
+
+[[contributing]]
+Contributing
+~~~~~~~~~~~~
+
+See https://github.com/decidim/decidim[Decidim].
+
+[[license]]
+License
+~~~~~~~
+
+See https://github.com/decidim/decidim[Decidim].

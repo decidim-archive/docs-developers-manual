@@ -1,0 +1,42 @@
+[[decidimpersonalnumber]]
+Decidim::PersonalNumber
+-----------------------
+
+Personal number support for decidim.
+
+[[usage]]
+Usage
+~~~~~
+
+This module allows users to register with a personal number and to log
+in with it.
+
+[[installation]]
+Installation
+~~~~~~~~~~~~
+
+Add this line to your application's Gemfile:
+
+[source,ruby]
+----
+gem 'decidim-personal_number'
+----
+
+And then execute:
+
+[source,bash]
+----
+bundle
+----
+
+[[contributing]]
+Contributing
+~~~~~~~~~~~~
+
+See https://github.com/decidim/decidim[Decidim].
+
+[[license]]
+License
+~~~~~~~
+
+This engine is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.

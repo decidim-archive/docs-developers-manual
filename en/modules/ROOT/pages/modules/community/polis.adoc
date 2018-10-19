@@ -1,0 +1,43 @@
+[[decidimpolis]]
+Decidim::Polis
+--------------
+
+The https://github.com/pol-is[Polis module] adds the PAM data
+visualizations to any participatory process but it is intended to be
+used just for the PAM participatory process.
+
+[[usage]]
+Usage
+~~~~~
+
+Add this line to your application's Gemfile:
+
+....
+gem "decidim-polis", git: "https://github.com/OpenSourcePolitics/decidim-polis"
+....
+
+And then execute:
+
+....
+bundle install decidim-polis
+....
+
+Do not forget to import migrations by doing
+
+....
+rails decidim_polis:install:migrations
+....
+
+in your app folder
+
+[[contributing]]
+Contributing
+~~~~~~~~~~~~
+
+See https://github.com/decidim/decidim[Decidim].
+
+[[license]]
+License
+~~~~~~~
+
+See https://github.com/decidim/decidim[Decidim].

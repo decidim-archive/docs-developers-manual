@@ -1,0 +1,41 @@
+[[decidimquestions]]
+Decidim::Questions
+------------------
+
+Questions / Views / Inputs based on decidim-proposals.
+
+[[usage]]
+Usage
+~~~~~
+
+Questions will be available as a Component for a Participatory Space.
+
+[[installation]]
+Installation
+~~~~~~~~~~~~
+
+Add this line to your application's Gemfile:
+
+[source,ruby]
+----
+gem 'decidim-questions
+----
+
+And then execute:
+
+[source,bash]
+----
+bundle
+----
+
+[[contributing]]
+Contributing
+~~~~~~~~~~~~
+
+See https://github.com/decidim/decidim[Decidim].
+
+[[license]]
+License
+~~~~~~~
+
+This engine is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.

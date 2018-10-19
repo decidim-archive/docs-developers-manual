@@ -1,0 +1,42 @@
+[[decidim]]
+Decidim
+-------
+
+Core functionality in Decidim. Every single decidim functionality
+depends on this gem.
+
+[[usage]]
+Usage
+~~~~~
+
+You'll be using indirectly on any decidim application.
+
+[[installation]]
+Installation
+~~~~~~~~~~~~
+
+Add `decidim` to your `Gemfile` and you'll be using it:
+
+[source,ruby]
+----
+gem 'decidim'
+----
+
+And then execute:
+
+[source,bash]
+----
+bundle
+----
+
+[[contributing]]
+Contributing
+~~~~~~~~~~~~
+
+See https://github.com/decidim/decidim[Decidim].
+
+[[license]]
+License
+~~~~~~~
+
+See https://github.com/decidim/decidim[Decidim].

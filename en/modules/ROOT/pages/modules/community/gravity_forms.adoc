@@ -1,0 +1,50 @@
+[[decidimgravityforms]]
+Decidim::GravityForms
+---------------------
+
+A gravity forms component for Decidim.
+
+[[usage]]
+Usage
+~~~~~
+
+It loads a gravity form inside an iframe on a component of a
+participatory space. The remote wordpress instance to load forms from is
+configurable as a global component setting. The wordpress instance needs
+https://www.gravityforms.com/[Gravity Forms] and the
+https://github.com/cedaro/gravity-forms-iframe[gravity forms iframe
+plugin] installed.
+
+Also, any gravity form you try to embed needs to have the "Allow this
+form to be embedded in an iframe" setting added by the mentioned plugin
+checked.
+
+[[installation]]
+Installation
+~~~~~~~~~~~~
+
+Add this line to your application's Gemfile:
+
+[source,ruby]
+----
+gem 'decidim-gravity_forms
+----
+
+And then execute:
+
+[source,bash]
+----
+bundle
+----
+
+[[contributing]]
+Contributing
+~~~~~~~~~~~~
+
+See https://github.com/decidim/decidim[Decidim].
+
+[[license]]
+License
+~~~~~~~
+
+See https://github.com/decidim/decidim[Decidim].

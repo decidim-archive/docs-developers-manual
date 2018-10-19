@@ -1,0 +1,45 @@
+[[decidimbudgets]]
+Decidim::Budgets
+----------------
+
+The Budgets module adds projects to any participatory process. It adds a
+CRUD engine to the admin and public views scoped inside the
+participatory process. Projects will link to related proposals and have
+a budget. The users should be able to distribute a budget between these
+projects.
+
+[[usage]]
+Usage
+~~~~~
+
+Budgets will be available as a Component for a Participatory Process.
+
+[[installation]]
+Installation
+~~~~~~~~~~~~
+
+Add this line to your application's Gemfile:
+
+[source,ruby]
+----
+gem 'decidim-budgets
+----
+
+And then execute:
+
+[source,bash]
+----
+bundle
+----
+
+[[contributing]]
+Contributing
+~~~~~~~~~~~~
+
+See https://github.com/decidim/decidim[Decidim].
+
+[[license]]
+License
+~~~~~~~
+
+See https://github.com/decidim/decidim[Decidim].

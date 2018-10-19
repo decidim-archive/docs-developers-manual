@@ -1,0 +1,44 @@
+[[decidimriksdagen]]
+Decidim::Riksdagen
+------------------
+
+A module to integrate some of the open data produced by the Swedish
+parliament.
+
+[[usage]]
+Usage
+~~~~~
+
+This creates a space in the admin section of Din Riksdag for admins and
+representatives. They can use it to manage the import and the
+synchronizing of data from data.riksdagen.se.
+
+[[installation]]
+Installation
+~~~~~~~~~~~~
+
+Add this line to your application's Gemfile:
+
+[source,ruby]
+----
+gem 'decidim-riksdagen, git: "https://github.com/DinRiksdag/decidim-module-riksdagen.git"
+----
+
+And then execute:
+
+[source,bash]
+----
+bundle
+----
+
+[[contributing]]
+Contributing
+~~~~~~~~~~~~
+
+See https://github.com/decidim/decidim[Decidim].
+
+[[license]]
+License
+~~~~~~~
+
+This engine is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.

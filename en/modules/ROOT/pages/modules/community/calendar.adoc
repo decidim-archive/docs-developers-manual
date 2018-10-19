@@ -1,0 +1,39 @@
+[[decidimcalendar]]
+Decidim::Calendar
+-----------------
+
+Adds a calendar view for all the Meetings, without regarding the
+Participatory Process or Assembly that they belong. Gives the option of
+filtering by month, week, day or a list.
+
+image:docs/screenshot01.png[Decidim Calendar Screenshot]]
+
+[[usage]]
+Usage
+~~~~~
+
+There isn't any configuration for this module.
+
+[[installation]]
+Installation
+~~~~~~~~~~~~
+
+Add this line to your application's Gemfile:
+
+[source,ruby]
+----
+gem 'decidim-calendar'
+----
+
+And then execute:
+
+[source,bash]
+----
+$ bundle
+----
+
+[[contributing]]
+Contributing
+~~~~~~~~~~~~
+
+Contribution directions go here.

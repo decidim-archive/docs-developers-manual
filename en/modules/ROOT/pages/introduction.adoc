@@ -58,7 +58,7 @@ Review]]
 What do you need to do?
 -----------------------
 
-* link:#getting-started-with-decidim[Get started with Decidim]
+* link:#getting-started-with-decidim[Getting started with Decidim]
 * link:#how-to-contribute[Contribute to the project]
 * link:#modules[Modules]
 * link:#browse-decidim[Create & browse development app]
@@ -116,9 +116,13 @@ Modules
 Official (stable)
 ^^^^^^^^^^^^^^^^^
 
-[width="100%",cols="41%,59%",options="header",]
+[width="100%",cols="31%,69%",options="header",]
 |=======================================================================
 |Module |Description
+|https://github.com/decidim/decidim/tree/master/decidim-api[API]
+|Exposes a GraphQL API to programatically interact with the Decidim
+platform via HTTP.
+
 |https://github.com/decidim/decidim/tree/master/decidim-accountability[Accountability]
 |Adds an accountability section to any participatory space so users can
 follow along the state of the accepted proposals.
@@ -127,12 +131,12 @@ follow along the state of the accepted proposals.
 |Adds an administration dashboard so users can manage their organization
 and all other entities.
 
-|https://github.com/decidim/decidim/tree/master/decidim-api[API]
-|Exposes a GraphQL API to programatically interact with the Decidim
-platform via HTTP.
-
 |https://github.com/decidim/decidim/tree/master/decidim-assemblies[Assemblies]
 |Permanent participatory spaces.
+
+|https://github.com/decidim/decidim/tree/master/decidim-blogs[Blogs]
+|This component makes possible to add posts ordered by publication time
+to spaces.
 
 |https://github.com/decidim/decidim/tree/master/decidim-budgets[Budgets]
 |Adds a participatory budgets system to any participatory space.
@@ -146,22 +150,33 @@ resource which can be commentable by users.
 understood as a collection of Meetings, with program, inscriptions and
 categories
 
+|https://github.com/decidim/decidim/tree/master/decidim-consultations[Consultations]
+|This module creates a new space for decidim to host consultations:
+debates around critical questions and a proxy for eVoting
+
 |https://github.com/decidim/decidim/tree/master/decidim-core[Core] |The
 basics of Decidim: users, organizations, etc. This is the only required
 engine to run Decidim, all the others are optional.
+
+|https://github.com/decidim/decidim/tree/master/decidim-debates[Debates]
+|The Debates module adds debate to any participatory process. It adds a
+CRUD engine to the admin and public view scoped inside the participatory
+process.
+
+|https://github.com/decidim/decidim/tree/master/decidim-dev[Dev] |Aids
+the local development of Decidim's components.
 
 |https://github.com/decidim/decidim/tree/master/decidim-generators[Generators]
 |It helps you with generating decidim applications & new components. It
 provides the `decidim` executable.
 
-|https://github.com/decidim/decidim/tree/master/decidim-participatory_processes[Participatory
-Processes] |The main concept of a Decidim installation: participatory
-processes.
+|https://github.com/decidim/decidim/tree/master/decidim-initiatives[Initiatives]
+|Initiatives is the place on Decidim's where citizens can promote a
+civic initiative. Unlike participatory processes that must be created by
+an administrator, Civic initiatives can be created by any user of the
+platform.
 
-|https://github.com/decidim/decidim/tree/master/decidim-dev[Dev] |Aids
-the local development of Decidim's components.
-
-|https://github.com/decidim/decidim/tree/master/decidim-meetings[Meeting]
+|https://github.com/decidim/decidim/tree/master/decidim-meetings[Meetings]
 |The Meeting module adds meeting to any participatory space. It adds a
 CRUD engine to the admin and public view scoped inside the participatory
 space.
@@ -171,9 +186,19 @@ space.
 space. It basically provides an interface to include arbitrary HTML
 content to any step.
 
+|https://github.com/decidim/decidim/tree/master/decidim-participatory_processes[Participatory
+Processes] |The main concept of a Decidim installation: participatory
+processes.
+
 |https://github.com/decidim/decidim/tree/master/decidim-proposals[Proposals]
 |The Proposals module adds one of the main components of Decidim: allows
 users to contribute to a participatory space by creating proposals.
+
+|https://github.com/decidim/decidim/tree/master/decidim-sortitions[Sortitions]
+|This component makes possible to select randomly a number of proposals
+among a set of proposals (or a category of proposals within a set)
+maximizing guarantees of randomness and avoiding manipulation of results
+by the administrator.
 
 |https://github.com/decidim/decidim/tree/master/decidim-surveys[Surveys]
 |Adds the ability for admins to create arbitrary surveys.
@@ -182,69 +207,118 @@ users to contribute to a participatory space by creating proposals.
 |Multitenant Admin to manage multiple organizations in a single
 installation.
 
-|https://github.com/decidim/decidim/tree/master/decidim-sortitions[Sortitions]
-|This component makes possible to select randomly a number of proposals
-among a set of proposals (or a category of proposals within a set)
-maximizing guarantees of randomness and avoiding manipulation of results
-by the administrator.
-
-|https://github.com/decidim/decidim/tree/master/decidim-consultations[Consultations]
-|This module creates a new space for decidim to host consultations:
-debates around critical questions and a proxy for eVoting
-
-|https://github.com/decidim/decidim/tree/master/decidim-initiatives[Initiatives]
-|Initiatives is the place on Decidim's where citizens can promote a
-civic initiative. Unlike participatory processes that must be created by
-an administrator, Civic initiatives can be created by any user of the
-platform.
-
-|https://github.com/decidim/decidim/tree/master/decidim-blogs[Blogs]
-|This component makes possible to add posts ordered by publication time
-to spaces.
+|https://github.com/decidim/decidim/tree/master/decidim-verifications[Verifications]
+|Offers several methods for allowing participants to get authorization
+to perform certain privileged actions. This module implements several of
+those methods and also offers a way for installation to implement their
+custom verification methods.
 |=======================================================================
 
 [[community]]
 Community
 ^^^^^^^^^
 
-[width="100%",cols="41%,59%",options="header",]
-|=======================================================================
-|Module |Description
-|https://github.com/diputacioBCN/decidim-diba/tree/master/decidim-census[Census]
-|Allows to upload a census CSV file to perform authorizations against
-real users parameterised by their age.
+If you need to have some features that we don't have yet, we recommend
+that you make a module. This is a Ruby on Rails engine with some APIs
+specific to Decidim (for registering with the menus, integration with
+spaces like Participatory Processes or Assemblies, with /admin or /api,
+etc).
 
-|https://github.com/podemos-info/decidim-module-crowdfundings[Crowdfunding]
-|This rails engine implements a Decidim component that allows to the
-administrators to configure crowfunding campaigns for a participatory
-space.
+As a base you can use these modules, although check first that the
+version is compatible with your current Decidim version. Also you should
+know that until v1.0.0 We're under development and these internal APIs
+can change. We recommend that you extensively test your module.
+
+[width="99%",cols="43%,3%,54%",options="header",]
+|=======================================================================
+|Module |Version |Description
+|https://github.com/diputacioBCN/decidim-diba/tree/master/decidim-age_action_authorization[Age
+Action Authorization] |0.9.3 |A Decidim based action authorization to
+check user's age inside actions.
+
+|https://github.com/castilla-lamancha/participa-castillalamancha/tree/master/decidim-calendar[Calendar]
+|0.14.1 |Adds a calendar view for all the Meetings, without regarding
+the Participatory Process or Assembly that they belong.
+
+|https://github.com/podemos-infoparticipa2/tree/master/decidim-module-crowdfundings[Crowdfunding]
+|0.14.1 |This rails engine implements a Decidim component that allows to
+the administrators to configure crowfunding campaigns for a
+participatory space.
 
 |https://github.com/AjuntamentdeBarcelona/decidim-barcelona/tree/master/decidim-dataviz[DataViz]
-|The Dataviz module adds the PAM data visualizations to any
+|0.13.1 |The Dataviz module adds the PAM data visualizations to any
 participatory process but it is intended to be used just for the PAM
 participatory process.
 
-|https://github.com/ElectricThings/decidim-members[Members] |Members
-list and search plugin for Decidim
+|https://github.com/podemos-info/participa2/tree/master/decidim-module-gravity_forms[Gravity
+Forms] |0.14.1 |A gravity forms component for Decidim.
 
-|https://github.com/OpenSourcePolitics/decidim-polis[Pol.is] |Pol.is
-integration on Decidim
+|https://github.com/diputacioBCN/decidim-diba/tree/master/decidim-ldap[LDAP]
+|0.9.3 |User authentication via LDAP
+
+|https://github.com/castilla-lamancha/participa-castillalamancha/tree/master/decidim-news[News]
+|0.14.1 |This will add an admin dashboard to manage news posts and
+front-end views for posts.
+
+|https://github.com/ElectricThings/decidim-members[Members] |0.13.1
+|Members list and search plugin for Decidim
+
+|https://github.com/PierreMesure/decidim-module-personal_number[Personal
+Number] |0.11.0.pre |This module allows users to register with a
+personal number and to log in with it.
+
+|https://github.com/OpenSourcePolitics/decidim-polis[Pol.is] |0.7.1
+|Pol.is integration on Decidim
+
+|https://github.com/OpenSourcePolitics/decidim-questions[Questions]
+|0.12.2 |Questions / Views / Inputs based on decidim-proposals.
+
+|https://github.com/DinRiksdag/decidim-module-riksdagen[Riksdagen]
+|0.11.0.pre |A Decidim module to integrate some of the open data
+produced by the Swedish parliament
 
 |https://github.com/OpenSourcePolitics/decidim-user-export[User Export]
-|Allow user export
+|0.8.3 |Allow user export
 
-|https://github.com/diputacioBCN/decidim-diba/tree/master/decidim-diba_census_api[Verification
-DIBA Census API] |A decidim package to provice user authorizations
-agains the Diputació of Barcelona census API
-
-|https://github.com/podemos-info/decidim-module-census_connector[Verification
-Podemos Census API] |A decidim package to provice user authorizations
-against the Podemos census API
-
-|https://github.com/podemos-info/decidim-module-votings[Votings] |An
-administrator can add one or more votings to a participatory process or
-assambly
+|https://github.com/podemos-info/participa2/tree/master/decidim-module-votings[Votings]
+|0.14.1 |An administrator can add one or more votings to a participatory
+process or assambly
 |=======================================================================
+
+[[authorizations-strategies]]
+Authorizations Strategies
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+One specific thing regarding these kind of applications is the
+link:decidim-verifications/README.md[authorization/verification] logic.
+Here are some examples:
+
+* https://github.com/AjuntamentdeBarcelona/decidim-barcelona/blob/master/app/services/census_authorization_handler.rb[Barcelona
+(City)]
+* https://github.com/AjuntamentdeCalafell/decidim-calafell/blob/master/app/services/census_authorization_handler.rb[Calafell]
+* https://github.com/diputacioBCN/decidim-diba/blob/master/decidim-diba_census_api/app/services/diba_census_api_authorization_handler.rb[DIBA
+(Barcelona Province)]
+* https://github.com/AjuntamentDeGava/decidim-gava/blob/master/app/services/census_authorization_handler.rb[Gavà]
+* https://github.com/HospitaletDeLlobregat/decidim-hospitalet/blob/master/app/services/census_authorization_handler.rb[Hospitalet
+de Llobregat]
+* https://github.com/AjMalgrat/decidim-malgrat/blob/master/app/services/carpetaciutada_handler.rb[Malgrat
+de Mar]
+* https://github.com/AjuntamentDeMataro/decidimmataro.cat/blob/master/app/services/census_authorization_handler.rb[Mataró]
+* https://github.com/ErabakiPamplona/erabaki/blob/master/app/services/census_authorization_handler.rb[Pamplona]
+* https://github.com/AjuntamentdeReus/decidim/blob/master/app/services/census_authorization_handler.rb[Reus]
+* https://github.com/AjuntamentDeSabadell/decidim-sabadell/blob/master/app/services/census_authorization_handler.rb[Sabadell]
+* https://github.com/AjuntamentdeSantCugat/decidim-sant_cugat/blob/master/app/services/census_authorization_handler.rb[Sant
+Cugat]
+* https://github.com/AjuntamentDeTerrassa/decidim-terrassa/blob/master/app/services/census_authorization_handler.rb[Terrassa]
+* https://github.com/vilanovailageltru/decidim-vilanova/blob/master/app/services/vilanova_authorization_handler.rb[Vilanova
+i la Geltrú]
+
+Other special verifications:
+
+* https://github.com/podemos-info/participa2/tree/master/decidim-module-census_connector[Podemos]
+* https://github.com/ElectricThings/fund_action/blob/master/app/services/anybody_authorization_handler.rb[FundAction]
+* https://github.com/CodiTramuntana/decidim-verifications-csv_emails[CSV
+emails]
 
 [[following-our-license]]
 Following our license

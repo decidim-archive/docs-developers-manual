@@ -1,0 +1,59 @@
+[[decidimcensusconnector]]
+Decidim::CensusConnector
+------------------------
+
+Short description and motivation.
+
+[[usage]]
+Usage
+~~~~~
+
+How to use my plugin.
+
+[[installation]]
+Installation
+~~~~~~~~~~~~
+
+Add this line to your application's Gemfile:
+
+[source,ruby]
+----
+gem 'decidim-census_connector'
+----
+
+And then execute:
+
+[source,bash]
+----
+bundle
+----
+
+Or install it yourself as:
+
+[source,bash]
+----
+gem install decidim-census_connector
+----
+
+Then run the generator to configure the gem
+
+[source,bash]
+----
+bin/rails generate decidim:census_connector:install
+----
+
+You'll need to configure the environment variable CENSUS_URL to point to
+the running instance of https://github.com/podemos-info/census[census].
+
+[[contributing]]
+Contributing
+~~~~~~~~~~~~
+
+Contribution directions go here.
+
+[[license]]
+License
+~~~~~~~
+
+The gem is available as open source under the terms of the GNU AFFERO
+GENERAL PUBLIC LICENSE.

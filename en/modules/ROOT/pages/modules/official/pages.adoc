@@ -1,0 +1,43 @@
+[[decidimpages]]
+Decidim::Pages
+--------------
+
+The Pages module adds static page capabilities to any participatory
+process. It basically provides an interface to include arbitrary HTML
+content to any step.
+
+[[usage]]
+Usage
+~~~~~
+
+Pages will be available as a Component for a Participatory Process.
+
+[[installation]]
+Installation
+~~~~~~~~~~~~
+
+Add this line to your application's Gemfile:
+
+[source,ruby]
+----
+gem 'decidim-pages'
+----
+
+And then execute:
+
+[source,bash]
+----
+bundle
+----
+
+[[contributing]]
+Contributing
+~~~~~~~~~~~~
+
+See https://github.com/decidim/decidim[Decidim].
+
+[[license]]
+License
+~~~~~~~
+
+See https://github.com/decidim/decidim[Decidim].

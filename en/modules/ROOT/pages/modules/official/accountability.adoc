@@ -1,0 +1,46 @@
+[[decidimaccountability]]
+Decidim::Accountability
+-----------------------
+
+The Accountability module adds results to any participatory process. It
+adds a CRUD engine to the admin and public views scoped inside the
+participatory process. Accountability will link to related meetings and
+proposals and will be used to show the progress on the related
+proposals.
+
+[[usage]]
+Usage
+~~~~~
+
+Accountability will be available as a Component for a Participatory
+Process.
+
+[[installation]]
+Installation
+~~~~~~~~~~~~
+
+Add this line to your application's Gemfile:
+
+[source,ruby]
+----
+gem 'decidim-accountability'
+----
+
+And then execute:
+
+[source,bash]
+----
+bundle
+----
+
+[[contributing]]
+Contributing
+~~~~~~~~~~~~
+
+See https://github.com/AjuntamentdeBarcelona/decidim[Decidim].
+
+[[license]]
+License
+~~~~~~~
+
+See https://github.com/AjuntamentdeBarcelona/decidim[Decidim].

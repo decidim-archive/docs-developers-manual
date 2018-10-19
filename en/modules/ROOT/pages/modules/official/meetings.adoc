@@ -1,0 +1,43 @@
+[[decidimmeetings]]
+Decidim::Meetings
+-----------------
+
+The Meetings module adds meeting to any participatory process. It adds a
+CRUD engine to the admin and public view scoped inside the participatory
+process.
+
+[[usage]]
+Usage
+~~~~~
+
+Meetings will be available as a component for a Participatory Process.
+
+[[installation]]
+Installation
+~~~~~~~~~~~~
+
+Add this line to your application's Gemfile:
+
+[source,ruby]
+----
+gem 'decidim-meetings'
+----
+
+And then execute:
+
+[source,bash]
+----
+bundle
+----
+
+[[contributing]]
+Contributing
+~~~~~~~~~~~~
+
+See https://github.com/decidim/decidim[Decidim].
+
+[[license]]
+License
+~~~~~~~
+
+See https://github.com/decidim/decidim[Decidim].

@@ -169,4 +169,4 @@ https://decidim-design.herokuapp.com/
 Testing
 ~~~~~~~
 
-Refer to the link:docs/advanced/testing.md[testing] guide.
+Refer to the link:advanced/testing.md[testing] guide.

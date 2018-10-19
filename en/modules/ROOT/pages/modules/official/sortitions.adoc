@@ -1,0 +1,55 @@
+[[decidimsortitions]]
+Decidim::Sortitions
+-------------------
+
+This module makes possible to select among a set of proposals by
+sortition.
+
+[[usage]]
+Usage
+~~~~~
+
+Simply include it in your Decidim instance.
+
+[[installation]]
+Installation
+~~~~~~~~~~~~
+
+Add this line to your application's Gemfile:
+
+[source,ruby]
+----
+gem 'decidim-sortitions'
+----
+
+And then execute:
+
+[source,bash]
+----
+bundle
+----
+
+[[import-migrations]]
+Import migrations
+~~~~~~~~~~~~~~~~~
+
+After installing the gem you must import and execute the migrations
+bundled with the gem:
+
+[source,bash]
+----
+bundle exec rails decidim_sortitions:install:migrations
+bundle exec rails db:migrate
+----
+
+[[contributing]]
+Contributing
+~~~~~~~~~~~~
+
+See https://github.com/decidim/decidim[Decidim].
+
+[[license]]
+License
+~~~~~~~
+
+See https://github.com/decidim/decidim[Decidim].

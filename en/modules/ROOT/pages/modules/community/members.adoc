@@ -1,0 +1,52 @@
+[[decidimmembers]]
+Decidim::Members
+----------------
+
+Members list and search plugin for Decidim (v0.9 onwards).
+
+[[usage]]
+Usage
+~~~~~
+
+Adding this plugin to your Decidim based Rails app will add a new main
+menu entry _Members_ which shows a searchable list of all members.
+
+For now, the plugin depends on a small core patch which is located in
+the `extra` directory.
+
+[[installation]]
+Installation
+~~~~~~~~~~~~
+
+Add this line to your application's Gemfile:
+
+[source,ruby]
+----
+gem 'decidim-members'
+----
+
+And then execute:
+
+[source,bash]
+----
+$ bundle
+----
+
+Or install it yourself as:
+
+[source,bash]
+----
+$ gem install decidim-members
+----
+
+[[contributing]]
+Contributing
+~~~~~~~~~~~~
+
+Fork it and create a pull request.
+
+[[license]]
+License
+~~~~~~~
+
+Same as Decidim, AGPL v3.

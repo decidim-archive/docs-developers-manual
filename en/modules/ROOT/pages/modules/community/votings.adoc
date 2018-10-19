@@ -1,0 +1,48 @@
+[[decidimvotings]]
+Decidim::Votings
+----------------
+
+An administrator can add one or more votings to a participatory space.
+
+[[usage]]
+Usage
+~~~~~
+
+How to use my plugin.
+
+[[installation]]
+Installation
+~~~~~~~~~~~~
+
+Add this line to your application's Gemfile:
+
+[source,ruby]
+----
+gem 'decidim-votings'
+----
+
+And then execute:
+
+[source,bash]
+----
+bundle
+----
+
+Or install it yourself as:
+
+[source,bash]
+----
+gem install decidim-votings
+----
+
+[[contributing]]
+Contributing
+~~~~~~~~~~~~
+
+See https://github.com/decidim/decidim[Decidim].
+
+[[license]]
+License
+~~~~~~~
+
+This engine is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
