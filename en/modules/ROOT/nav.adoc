@@ -40,6 +40,51 @@
 ** xref:advanced/tradeoffs.adoc[Tradeoffs]
 ** xref:advanced/view_hooks.adoc[View hooks]
 ** xref:advanced/view_models_aka_cells.adoc[View models aka cells]
+* Modules
+** Official
+*** xref:mods/official/accountability.adoc[Accountability]
+*** xref:mods/official/admin.adoc[Admin]
+*** xref:mods/official/api.adoc[API]
+*** xref:mods/official/assemblies.adoc[Assemblies]
+*** xref:mods/official/blogs.adoc[Blogs]
+*** xref:mods/official/budgets.adoc[Budgets]
+*** xref:mods/official/comments.adoc[Comments]
+*** xref:mods/official/conferences.adoc[Conferences]
+*** xref:mods/official/consultations.adoc[Cosultations]
+*** xref:mods/official/core.adoc[Core]
+*** xref:mods/official/debates.adoc[Debates]
+*** xref:mods/official/dev.adoc[Dev]
+*** xref:mods/official/generators.adoc[Generators]
+*** xref:mods/official/initiatives.adoc[Initiatives]
+*** xref:mods/official/meetings.adoc[Meetings]
+*** xref:mods/official/pages.adoc[Pages]
+*** xref:mods/official/participatory_processes.adoc[Participatory Process]
+*** xref:mods/official/proposals.adoc[Proposals]
+*** xref:mods/official/sortitions.adoc[Sortitions]
+*** xref:mods/official/surveys.adoc[Surveys]
+*** xref:mods/official/system.adoc[System]
+*** xref:mods/official/verifications.adoc[Verifications]
+** Community
+*** xref:mods/official/accountability.adoc[Accountability]
+
+*** xref:mods/community/age_action_authorization.adoc[Age Action]
+*** xref:mods/community/calendar.adoc[Calendar]
+*** xref:mods/community/census_connector.adoc[Census Connector]
+*** xref:mods/community/crowdfundings.adoc[Crowfundings]
+*** xref:mods/community/dataviz.adoc[DataViz]
+*** xref:mods/community/gravity_forms.adoc[Gravity Forms]
+*** xref:mods/community/ldap.adoc[LDAP]
+*** xref:mods/community/members.adoc[Members]
+*** xref:mods/community/news.adoc[News]
+*** xref:mods/community/personal_number.adoc[Personal Number]
+*** xref:mods/community/polis.adoc[Pol.is]
+*** xref:mods/community/questions.adoc[Questions]
+*** xref:mods/community/riksdagen.adoc[Riksdagen]
+*** xref:mods/community/user_export.adoc[User Export]
+*** xref:mods/community/votings.adoc[Votings]
+
+
+
 
 .Other formats
 * xref:single-page.adoc[Single page (HTML)]
