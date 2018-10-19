@@ -31,7 +31,6 @@
 ** xref:advanced/components.adoc[Components]
 ** xref:advanced/content_blocks.adoc[Content Blocks]
 ** xref:advanced/content_processors.adoc[Content Processors]
-** xref:advanced/data-picker.adoc[Data Picker]
 ** xref:advanced/deploy.adoc[Deploy]
 ** xref:advanced/followers.adoc[Followers]
 ** xref:advanced/how_to_create_a_module.adoc[How to create a module]
