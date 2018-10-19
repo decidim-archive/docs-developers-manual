@@ -35,8 +35,9 @@ pandoc_wrapper tmp/decidim/README.md > en/modules/ROOT/pages/introduction.adoc
 pandoc_wrapper tmp/decidim/README.md > en/modules/ROOT/pages/introduction.adoc
 
 convert_md_to_asciidoc manual-installation 0
-convert_md_to_asciidoc development_guide 0
+convert_md_to_asciidoc getting_started 0
 convert_md_to_asciidoc checklist 0
+convert_md_to_asciidoc development_guide 0
 
 convert_md_to_asciidoc customization/code 0
 convert_md_to_asciidoc customization/authorizations 0
@@ -54,7 +55,8 @@ convert_md_to_asciidoc advanced/adding_fixtures_aka_dummy_content 0
 convert_md_to_asciidoc advanced/components 0
 convert_md_to_asciidoc advanced/content_blocks 0
 convert_md_to_asciidoc advanced/content_processors 0
-convert_md_to_asciidoc advanced/data-picker 0
+# Syntax error on line 79
+#convert_md_to_asciidoc advanced/data-picker 0
 convert_md_to_asciidoc advanced/deploy 0
 convert_md_to_asciidoc advanced/followers 0
 convert_md_to_asciidoc advanced/how_to_create_a_module 0
