@@ -1,10 +1,5 @@
 // Add to the following lists cross references to all the pages you want to see
 // listed in the navigation menu for this document.
-.Information
-* xref:doc-info.adoc[Document information]
-* xref:contributing.adoc[Authorship criteria and how to contribute to this document]
-
-.Contents
 * xref:introduction.adoc[Introduction]
 * xref:getting_started.adoc[Getting Started]
 * xref:development_guide.adoc[Development Guide]
@@ -65,7 +60,6 @@
 *** xref:modules/official/verifications.adoc[Verifications]
 ** Community
 *** xref:modules/official/accountability.adoc[Accountability]
-
 *** xref:modules/community/age_action_authorization.adoc[Age Action]
 *** xref:modules/community/calendar.adoc[Calendar]
 *** xref:modules/community/census_connector.adoc[Census Connector]
@@ -81,10 +75,5 @@
 *** xref:modules/community/riksdagen.adoc[Riksdagen]
 *** xref:modules/community/user_export.adoc[User Export]
 *** xref:modules/community/votings.adoc[Votings]
-
-
-
-
-.Other formats
-* xref:single-page.adoc[Single page (HTML)]
-* [.pdf-download-button]#PDF#
+* xref:doc-info.adoc[_Document information_]
+* xref:contributing.adoc[_Authorship criteria and how to contribute to this document_]
