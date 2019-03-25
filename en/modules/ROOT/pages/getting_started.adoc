@@ -65,6 +65,15 @@ bash install_decidim.bash
 Read more about the
 https://github.com/alabs/decidim-install[installation script].
 
+When the installation has finished, update the ruby environment with the following commands, otherwhise the homepage will not render:
+----
+cd decidim_application/bin
+rbenv install 2.5.3
+rbenv local 2.5.3
+./update
+rails s
+----
+
 [[c.-using-docker-experimental]]
 C. Using Docker [experimental]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
